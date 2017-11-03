@@ -1,8 +1,3 @@
-class Team
-  attr_accessor :name, :motto
-
-  def initialize(params)
-    @name = params[:name]
-    @motto = params[:motto]
-  end
+class Team < ActiveRecord::Base
+  has_many :superheros
 end
